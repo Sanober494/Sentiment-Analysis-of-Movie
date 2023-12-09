@@ -30,7 +30,6 @@ X_train, X_test, y_train, y_test = train_test_split(df.review, df.Category, test
 # Create a CountVectorizer
 v = CountVectorizer()
 x_train_cv = v.fit_transform(X_train.values)
-
 # Create a RandomForestClassifier pipeline
 clf = Pipeline([
     ('vectorizer', CountVectorizer()),                                                  
