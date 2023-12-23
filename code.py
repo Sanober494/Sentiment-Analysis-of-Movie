@@ -39,7 +39,7 @@ clf = Pipeline([
 # Fit the pipeline with training data
 clf.fit(X_train, y_train)
 
-# Get predictions for X_test
+# Predictions for X_test
 y_pred = clf.predict(X_test)
 
 # Print the classification report
